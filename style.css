@@ -1,0 +1,111 @@
+.home {
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+    --text: #fff;
+}
+
+body[theme='black'] {
+    background: #000;
+}
+
+body[theme='black'] .section {
+
+    color: white;
+}
+
+
+
+body[theme='cyan'] {
+    background: #aedee0;
+}
+
+body[theme='cyan'] .section {
+    color: black;
+    --text: #000;
+}
+
+body[theme='salmon'] {
+    background: #ef9d71;
+}
+
+body[theme='salmon'] .section {
+    --text: #000;
+    color: black;
+}
+
+body[theme='light'] {
+    background: #fff;
+}
+
+body[theme='light'] .section {
+    color: #000;
+    --text: #000;
+}
+
+
+@font-face {
+    font-family: ppbold;
+    src: url(./fonts/pp\ machina\ bold.woff);
+}
+
+@font-face {
+    font-family: ppneue;
+    src: url(fonts/pp\ neue.woff);
+}
+
+@font-face {
+    font-family: pplight;
+    src: url(./fonts/pp\ machina\ light.ttf);
+}
+
+.marquee,
+.slide {
+    font-family: ppbold;
+}
+
+.crafts-text>h1,
+.realh1,
+.our-team,
+.insights h1 {
+    font-family: ppneue;
+}
+
+.footer h2 {
+    font-family: ppbold;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.header,
+.honours,
+.insights h2,
+.our-team h3,
+.crafts-text>p,
+.ourprojectbtn,
+.carditem h1,
+.carditem p,
+.desktop_nav h6,
+.contactusbtn h1 {
+    font-family: pplight;
+}
+
+.footer h1 {
+    font-family: pplight;
+}
+
+body {
+    transition: background-color 0.4s ease-in;
+}
+
+.picture {
+    transition: all ease 0.2s;
+}
+
+.desktop_nav {
+    transition: all ease 0.2s;
+}
